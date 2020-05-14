@@ -1,3 +1,5 @@
+require 'pry'
+
 class Board
 
   attr_accessor :cells
@@ -39,6 +41,7 @@ class Board
   end
 
   def valid_move?(index)
+    binding.pry
     index.to_i.between?(0,8) && !taken?(index)
   end
 end
