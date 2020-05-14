@@ -6,9 +6,9 @@ class Board
     @move = move
     @board = ["", "", "", "", "", "", "", "", ""]
   end
-  
+
   def cells(move)
-    
+
   end
 
   def reset!
