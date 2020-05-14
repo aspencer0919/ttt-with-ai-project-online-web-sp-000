@@ -44,4 +44,8 @@ class Board
   #  binding.pry
     index.to_i.between?(1,9) && !taken?(index)
   end
+
+  def update(index, player)
+    self.cells[index.to_i-1] = player.token
+  end
 end
