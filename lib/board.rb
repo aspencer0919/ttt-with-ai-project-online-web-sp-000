@@ -39,6 +39,6 @@ class Board
   end
 
   def valid_move?(index)
-    index.between?(0,8) && !taken?(index)
+    index.to_i.between?(0,8) && !taken?(index)
   end
 end
