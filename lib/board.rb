@@ -35,7 +35,7 @@ class Board
   end
 
   def taken?(index)
-    !(self.cells.to_i-1[index].nil? || self.cells.to_i-1[index] == " ")
+    !(self.cells[index.to_i-1].nil? || self.cells[index.to_i-1] == " ")
   end
 
   def valid_move?(index)
