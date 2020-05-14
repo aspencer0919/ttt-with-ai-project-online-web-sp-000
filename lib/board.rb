@@ -40,7 +40,7 @@ class Board
     !(self.cells[index.to_i-1].nil? || self.cells[index.to_i-1] == " ")
   end
 
-  def valid_move?(index)
+  def valid_move?(index-1)
   #  binding.pry
     index.between?(0,8) && !taken?(index)
   end
