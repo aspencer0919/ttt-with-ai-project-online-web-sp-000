@@ -27,7 +27,7 @@ class Board
   end
 
   def full?
-    !self.any?{|x| x == "" || x == " "}
+    self.cells.all?{|x| x == "" || x == " "}
   end
 
 end
