@@ -42,6 +42,6 @@ class Board
 
   def valid_move?(index)
   #  binding.pry
-    index.to_i.between?(0,8) && !taken?(index)
+    index.to_i.between?(1,9) && !taken?(index)
   end
 end
