@@ -35,10 +35,10 @@ class Board
   end
 
   def taken?(index)
-    !(self.cells[index].nil? || self.cells[index] == " ")
+    !(self.cells.to_i-1[index].nil? || self.cells.to_i-1[index] == " ")
   end
 
   def valid_move?(index)
-    index.between?(0,8) && !position_taken?(index)
+    index.between?(0,8) && !taken?(index)
   end
 end
