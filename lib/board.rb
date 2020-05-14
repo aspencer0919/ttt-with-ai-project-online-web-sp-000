@@ -1,10 +1,8 @@
 class Board
 
-  attr_accessor :cells, :move
-  def initialize
-    @cells = cells
-    @move = move
-    @board = ["", "", "", "", "", "", "", "", ""]
+  def initialize(board = nil)
+    @board = board || Array.new(9, " ")
+    @input = nil
   end
 
   def cells(move)
@@ -12,7 +10,7 @@ class Board
   end
 
   def reset!
-    @board = []
+    @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
 
