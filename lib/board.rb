@@ -34,4 +34,11 @@ class Board
     self.cells.count("X") + self.cells.count("O")
   end
 
+  def taken?(index)
+    !(self.cells[index].nil? || self.cells[index] == " ")
+  end
+
+  def valid_move?(index)
+    index.between?(0,8) && !position_taken?(index)
+  end
 end
